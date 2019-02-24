@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Event</string>
+    <string name="title">Các Kiểu Lập Trình Sự Kiện</string>
+    <string name="result">Tổng 2 số</string>
+</resources>

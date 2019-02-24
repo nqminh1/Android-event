@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:background="@color/green"/>
+    <TextView
+        android:id="@+id/txt_a"
+        android:layout_below="@+id/txt_1"
+        android:layout_width="100dp"
+        android:gravity="top"
+        android:layout_height="wrap_content"
+        android:text="Số a:"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/input_a"
+        android:layout_below="@+id/txt_1"
+        android:layout_toRightOf="@+id/txt_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/txt_b"
+        android:layout_below="@+id/txt_a"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Số b:"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/input_b"
+        android:layout_below="@+id/txt_a"
+        android:layout_toRightOf="@+id/txt_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/input_kq"
+        android:layout_below="@+id/txt_b"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/green"
+        android:textSize="26dp"/>
+
+    <Button
+        android:id="@+id/but_1"
+        android:layout_below="@+id/input_kq"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result"/>
+
+</RelativeLayout>
